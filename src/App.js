@@ -1,7 +1,7 @@
-/* A user-defined component that has two local variables text and style where text is any
-string and style contains css style property . The component must display this text as a main
-heading with the style applied using interpolation.
-Display this tag from App component */
+/* A user-defined component that has a local variables text where text is any string . The
+component must display this text as a main heading with text-primary and bg-light
+Boortstrap styles applied .
+Display this tag from App component*/
 
 
 function App(){
@@ -13,7 +13,7 @@ function App(){
 
 function Display(){
   let text = `Hello, My name is Swapnil Gaikwad doing CDAC in TVM.`;
-  let theme = "bg-success";
+  let theme = "bg-primary text-light";
 
   return(<div className={theme}><h1>{text}</h1></div>);
 }
